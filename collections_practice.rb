@@ -54,10 +54,11 @@ arr = []
   cool.each do |hash|
     if hash[:temperature] == "cool"
       arr << hash
+      end
     end
-  end
-    arr
-  end
+  arr
+end
 
 def organize_schools(schools)
+  schools.each do |x|
 end
