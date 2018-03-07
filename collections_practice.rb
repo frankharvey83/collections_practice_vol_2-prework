@@ -69,5 +69,6 @@ def organize_schools(schools)
       name.each do |location_hash|
     binding.pry
   end
+  end
 end
 end
