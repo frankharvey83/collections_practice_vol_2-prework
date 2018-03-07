@@ -49,9 +49,11 @@ end
 # [{:name=>"ashley", :temperature=>"sort of cool"},
 #  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
+
   cool.each do |hash|
-    if hash[:name] == "blake"
-      hash
+    hash.each |k, v|
+    binding.pry 
+    # hash.delete_if {hash[:temperature] != "cool"}
     end
   end
 end
