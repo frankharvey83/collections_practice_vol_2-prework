@@ -52,6 +52,7 @@ def find_cool(cool)
   cool.each do |arr|
   binding.pry
 end
+end
 
 def organize_schools(schools)
 end
