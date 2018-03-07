@@ -49,8 +49,9 @@ end
 # [{:name=>"ashley", :temperature=>"sort of cool"},
 #  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
-  cool.each do |arr|
-  binding.pry
+  cool.each do |hash|
+    if hash[:temperature].include? "cool"
+      hash
 end
 end
 
