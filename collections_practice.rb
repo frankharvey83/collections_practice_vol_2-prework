@@ -51,11 +51,10 @@ end
 def find_cool(cool)
 
   cool.each do |hash|
-    hash.each do |k, v|
-    binding.pry
-    # hash.delete_if {hash[:temperature] != "cool"}
+    hash.delete_if {hash[:temperature] != "cool"}
     end
   end
+  hash
   end
 
 def organize_schools(schools)
