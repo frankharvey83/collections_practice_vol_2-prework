@@ -50,7 +50,7 @@ end
 #  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
   cool.each do |hash|
-    if hash[:temperature].length > 5
+    if hash[:temperature].length < 5
       hash
     end
   end
