@@ -63,9 +63,17 @@ end
 #  "dev boot camp chicago"=>{:location=>"Chicago"},
 #  "general assembly"=>{:location=>"NYC"},
 #  "Hack Reactor"=>{:location=>"SF"}}
+
+expected: {"NYC"=>["flatiron school bk", "flatiron school", "general assembly"], "SF"=>["dev boot camp", "Hack Reactor"], "Chicago"=>[
+"dev boot camp chicago"]}
+
 def organize_schools(schools)
-  schools.each do |hash|
-    hash.each do |name|
+  hash_list = {"NYC" => [], "SF" => [], "Chicago" => []}
+
+
+  schools.each do |hash_arr|
+    if hash_arr[1][:location] == "NYC"
+      
     binding.pry
   end
 end
