@@ -73,7 +73,7 @@ def organize_schools(schools)
 
   schools.each do |hash_arr|
     if hash_arr[1][:location] == "NYC"
-
+      hash_list["NYC"] << hash_arr[0]
     binding.pry
   end
 end
