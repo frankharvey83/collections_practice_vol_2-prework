@@ -55,6 +55,7 @@ arr = []
     if hash[:temperature] == "cool"
       arr << hash
     end
+  end
     arr
   end
 
