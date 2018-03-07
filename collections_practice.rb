@@ -57,12 +57,12 @@ arr = []
   arr
 end
 
-{"flatiron school bk"=>{:location=>"NYC"},
- "flatiron school"=>{:location=>"NYC"},
- "dev boot camp"=>{:location=>"SF"},
- "dev boot camp chicago"=>{:location=>"Chicago"},
- "general assembly"=>{:location=>"NYC"},
- "Hack Reactor"=>{:location=>"SF"}}
+# {"flatiron school bk"=>{:location=>"NYC"},
+#  "flatiron school"=>{:location=>"NYC"},
+#  "dev boot camp"=>{:location=>"SF"},
+#  "dev boot camp chicago"=>{:location=>"Chicago"},
+#  "general assembly"=>{:location=>"NYC"},
+#  "Hack Reactor"=>{:location=>"SF"}}
 def organize_schools(schools)
   schools.each do |hash|
     hash.each do |name, location_hash|
