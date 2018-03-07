@@ -68,6 +68,4 @@ def organize_schools(schools)
     hash.each do |name|
     binding.pry
   end
-  end
-end
 end
