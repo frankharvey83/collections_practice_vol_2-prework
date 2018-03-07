@@ -53,7 +53,7 @@ def find_cool(cool)
   cool.each do |hash|
     hash.delete_if {hash[:temperature] != "cool"}
     end
-  return cool
+  return cool.shift
   end
 
 def organize_schools(schools)
