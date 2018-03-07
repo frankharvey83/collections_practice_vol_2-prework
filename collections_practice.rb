@@ -65,7 +65,8 @@ end
 #  "Hack Reactor"=>{:location=>"SF"}}
 def organize_schools(schools)
   schools.each do |hash|
-    hash.each do |name, location_hash|
+    hash.each do |name|
+      name.each do |location_hash|
     binding.pry
   end
 end
