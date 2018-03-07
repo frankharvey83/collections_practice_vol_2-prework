@@ -46,8 +46,11 @@ def merge_data(keys, data)
   end
 end
 
+# [{:name=>"ashley", :temperature=>"sort of cool"},
+#  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
-  binding.pry 
+  cool.each do |arr|
+  binding.pry
 end
 
 def organize_schools(schools)
