@@ -46,8 +46,6 @@ def merge_data(keys, data)
   end
 end
 
-# [{:name=>"ashley", :temperature=>"sort of cool"},
-#  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
 arr = []
 
@@ -59,8 +57,15 @@ arr = []
   arr
 end
 
+{"flatiron school bk"=>{:location=>"NYC"},
+ "flatiron school"=>{:location=>"NYC"},
+ "dev boot camp"=>{:location=>"SF"},
+ "dev boot camp chicago"=>{:location=>"Chicago"},
+ "general assembly"=>{:location=>"NYC"},
+ "Hack Reactor"=>{:location=>"SF"}}
 def organize_schools(schools)
-  schools.each do |x|
+  schools.each do |hash|
+    hash.each do |name, location_hash|
     binding.pry
   end
 end
