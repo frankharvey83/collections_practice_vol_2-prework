@@ -61,4 +61,6 @@ end
 
 def organize_schools(schools)
   schools.each do |x|
+    binding.pry
+  end
 end
