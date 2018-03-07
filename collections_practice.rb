@@ -47,6 +47,7 @@ def merge_data(keys, data)
 end
 
 def find_cool(cool)
+  binding.pry 
 end
 
 def organize_schools(schools)
