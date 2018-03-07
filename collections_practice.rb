@@ -52,6 +52,7 @@ def find_cool(cool)
   cool.each do |hash|
     if hash[:temperature].include? "cool"
       hash
+    end
 end
 end
 
