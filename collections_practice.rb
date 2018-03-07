@@ -49,11 +49,13 @@ end
 # [{:name=>"ashley", :temperature=>"sort of cool"},
 #  {:name=>"blake", :temperature=>"cool"}]
 def find_cool(cool)
+arr = []
 
   cool.each do |hash|
-    hash.delete_if {hash[:temperature] != "cool"}
+    if hash[:temperature] == "cool"
+      arr << hash
     end
-  return cool
+    arr
   end
 
 def organize_schools(schools)
